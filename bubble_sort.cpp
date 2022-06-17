@@ -62,7 +62,7 @@ void bubble(int a[], int n){
     }
 }
 
-
+//can be made adaptable but isnt by nature
 void adaptive_bubble(int a[], int n){
     int flag = 0;
     for(int i=0;i<n-1;i++){
