@@ -89,9 +89,10 @@ int main() {
         cout<<a[i]<<"\t";
     }
     cout<<endl;
-    int a1[] = {6, 5, 4, 3, 2, 1};
-    adaptive_bubble(a1, n);
-    for(int i=0;i<n;i++){
+    int a1[] = {1, 2, 3, 4, 5, 6};
+    int n1 = sizeof(a)/sizeof(a[0]);
+    adaptive_bubble(a1, n1);
+    for(int i=0;i<n1;i++){
         cout<<a1[i]<<"\t";
     }
     return 0;
