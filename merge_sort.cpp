@@ -69,6 +69,14 @@ void iterative_merge_sort(int a[], int n){
 }
 
 /* Recursive version
+ * 8   2   9   6   5   3   7   4
+ *                                           [0, 7] 3
+ *                                             /\
+ *                             [0, 3] 1                 [4, 7] 5
+ *                               /\                       /\
+ *                      [0, 1] 0   [2, 3] 2      [4, 5] 4   [6, 7] 6
+ *                        /\          /\           /\         /\
+ *                   [0, 0][1, 1][2, 2][3, 3][4, 4][5, 5][6, 6][7, 7]
  * Time Complexity: O(nlogn)
  */
 void recursive_merge_sort(int a[], int l, int h){
